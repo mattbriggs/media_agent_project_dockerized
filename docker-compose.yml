@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  media_agent:
+    build: .
+    container_name: media_agent
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
